@@ -1,0 +1,49 @@
+First 5 rows:
+  ApplicantID  Age  ...  SelfEmployed  LoanApproved
+0       L0001   25  ...            No             Y
+1       L0002   55  ...            No             N
+2       L0003   50  ...           Yes             Y
+3       L0004   40  ...            No             N
+4       L0005   40  ...            No             N
+
+[5 rows x 11 columns]
+
+Classes:
+['N', 'Y']
+
+Missing values after preprocessing:
+0
+
+Number of features after encoding: 15
+
+Training samples: 480
+Testing samples: 120
+
+======================================
+CONFUSION MATRIX
+======================================
+[[35 32]
+ [16 37]]
+
+TN = 35
+FP = 32
+FN = 16
+TP = 37
+
+======================================
+CLASSIFICATION METRICS
+======================================
+Accuracy = 0.6
+Accuracy (%) = 60.0
+Error = 0.4
+Error (%) = 40.0
+Recall = 0.6981132075471698
+Specificity = 0.5223880597014925
+F1-Score = 0.6065573770491803
+AUC = 0.7231765699802872
+
+======================================
+5-FOLD CROSS VALIDATION
+======================================
+Fold Accuracies: [0.69166667 0.625      0.74166667 0.71666667 0.70833333]
+Mean CV Accuracy: 0.6966666666666668
