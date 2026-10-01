@@ -1,0 +1,123 @@
+First 5 Rows:
+  ApplicantID  Age  AnnualIncome  LoanAmount  CreditScore  EmploymentYears     Education MaritalStatus PropertyArea SelfEmployed LoanApproved
+0       L0001   25         35200       30000          703              7.4      Graduate       Married        Rural           No            Y
+1       L0002   55         38300      133000          712              2.1      Graduate       Married        Urban           No            N
+2       L0003   50         35800       95000          678             10.9      Graduate       Married    Semiurban          Yes            Y
+3       L0004   40         43000      103000          694              5.2      Graduate       Married    Semiurban           No            N
+4       L0005   40         77800       84000          728              3.4  Not Graduate      Divorced        Urban           No            N
+
+Column Names:
+['ApplicantID', 'Age', 'AnnualIncome', 'LoanAmount', 'CreditScore', 'EmploymentYears', 'Education', 'MaritalStatus', 'PropertyArea', 'SelfEmployed', 'LoanApproved']
+
+Missing Values:
+ApplicantID        0
+Age                0
+AnnualIncome       0
+LoanAmount         0
+CreditScore        0
+EmploymentYears    0
+Education          0
+MaritalStatus      0
+PropertyArea       0
+SelfEmployed       0
+LoanApproved       0
+dtype: int64
+
+Target Distribution:
+LoanApproved
+0    334
+1    266
+Name: count, dtype: int64
+
+Training samples: 480
+Testing samples: 120
+
+================ CONFUSION MATRIX ================
+[[51 16]
+ [15 38]]
+
+True Negative (TN): 51
+False Positive (FP): 16
+False Negative (FN): 15
+True Positive (TP): 38
+
+================ SVM RESULTS ================
+Accuracy     : 0.7417
+Error        : 0.2583
+Recall       : 0.717
+Specificity  : 0.7612
+Precision    : 0.7037
+F1-Score     : 0.7103
+AUC          : 0.813
+
+================ 5-FOLD CROSS VALIDATION ================
+Fold 1 Accuracy: 0.7167
+Fold 2 Accuracy: 0.7083
+Fold 3 Accuracy: 0.725
+Fold 4 Accuracy: 0.6917
+Fold 5 Accuracy: 0.725
+
+Mean CV Accuracy: 0.7133
+CV Standard Deviation: 0.0125
+
+Total Features After Encoding: 15
+
+================ SELECTKBEST ================
+Selected Features:
+num__LoanAmount
+num__CreditScore
+cat__Education_Graduate
+cat__Education_Not Graduate
+cat__PropertyArea_Rural
+cat__PropertyArea_Semiurban
+cat__SelfEmployed_No
+cat__SelfEmployed_Yes
+
+Confusion Matrix:
+[[55 12]
+ [19 34]]
+
+TP: 34
+TN: 55
+FP: 12
+FN: 19
+
+Accuracy: 0.7417
+Error: 0.2583
+Recall: 0.6415
+Specificity: 0.8209
+F1-Score: 0.6869
+AUC: 0.7668
+
+================ RFE FEATURE SELECTION ================
+Selected Features:
+num__AnnualIncome
+num__LoanAmount
+num__CreditScore
+cat__Education_Graduate
+cat__Education_Not Graduate
+cat__MaritalStatus_Divorced
+cat__PropertyArea_Rural
+
+Confusion Matrix:
+[[53 14]
+ [17 36]]
+
+TP: 36
+TN: 53
+FP: 14
+FN: 17
+
+Accuracy: 0.7417
+Error: 0.2583
+Recall: 0.6792
+Specificity: 0.791
+F1-Score: 0.699
+AUC: 0.7919
+
+================ FINAL COMPARISON ================
+            Method  Accuracy  Error  Recall  Specificity  F1-Score    AUC
+SVM - All Features    0.7417 0.2583  0.7170       0.7612    0.7103 0.8130
+ SVM - SelectKBest    0.7417 0.2583  0.6415       0.8209    0.6869 0.7668
+         SVM - RFE    0.7417 0.2583  0.6792       0.7910    0.6990 0.7919
+PS C:\Users\Admin\Desktop\MLpracticals\p5> 
