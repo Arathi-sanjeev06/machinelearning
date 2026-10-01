@@ -1,0 +1,93 @@
+======================================
+K-NEAREST NEIGHBOUR CLASSIFICATION
+======================================
+
+Dataset:
+   x1  x2 Class
+0   4   3     B
+1   3   3     A
+2   5   5     A
+3   2   4     A
+4   8   8     B
+5   7   2     B
+
+Classes:
+['A' 'B']
+
+New Point Q = [4 4]
+
+======================================
+DISTANCES FROM Q
+======================================
+   x1  x2 Class  Distance
+0   4   3     B  1.000000
+1   3   3     A  1.414214
+2   5   5     A  1.414214
+3   2   4     A  2.000000
+4   7   2     B  3.605551
+5   8   8     B  5.656854
+
+======================================
+K = 1
+======================================
+C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but KNeighborsClassifier was fitted with feature names
+  warnings.warn(
+Predicted Class = B
+
+======================================
+K = 3
+======================================
+C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but KNeighborsClassifier was fitted with feature names
+  warnings.warn(
+Predicted Class = A
+
+======================================
+K = 5
+======================================
+C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but KNeighborsClassifier was fitted with feature names
+  warnings.warn(
+Predicted Class = A
+
+======================================
+NEAREST NEIGHBOURS
+======================================
+C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but KNeighborsClassifier was fitted with feature names
+  warnings.warn(
+
+K = 1
+Neighbour: P1 | x1 = 4 | x2 = 3 | Class = B | Distance = 1.0
+C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but KNeighborsClassifier was fitted with feature names
+  warnings.warn(
+
+K = 3
+Neighbour: P1 | x1 = 4 | x2 = 3 | Class = B | Distance = 1.0
+Neighbour: P2 | x1 = 3 | x2 = 3 | Class = A | Distance = 1.4142
+Neighbour: P3 | x1 = 5 | x2 = 5 | Class = A | Distance = 1.4142
+C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but KNeighborsClassifier was fitted with feature names
+  warnings.warn(
+
+K = 5
+Neighbour: P1 | x1 = 4 | x2 = 3 | Class = B | Distance = 1.0
+Neighbour: P2 | x1 = 3 | x2 = 3 | Class = A | Distance = 1.4142
+Neighbour: P3 | x1 = 5 | x2 = 5 | Class = A | Distance = 1.4142
+Neighbour: P4 | x1 = 2 | x2 = 4 | Class = A | Distance = 2.0
+Neighbour: P6 | x1 = 7 | x2 = 2 | Class = B | Distance = 3.6056
+
+======================================
+FINAL COMPARISON
+======================================
+K = 1  --> B
+K = 3  --> A
+K = 5  --> A
+
+======================================
+KNN PARAMETERS USED
+======================================
+n_neighbors = K
+weights = uniform
+algorithm = auto
+leaf_size = 30
+p = 2
+metric = minkowski
+metric_params = None
+n_jobs = Nones
