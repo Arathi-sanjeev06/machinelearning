@@ -1,0 +1,172 @@
+
+
+
+First 5 rows:
+  ApplicantID  Age  ...  SelfEmployed  LoanApproved
+0       L0001   25  ...            No             Y
+1       L0002   55  ...            No             N
+2       L0003   50  ...           Yes             Y
+3       L0004   40  ...            No             N
+4       L0005   40  ...            No             N
+
+[5 rows x 11 columns]
+
+Classes:
+['N' 'Y']
+
+Training samples: 480
+Testing samples: 120
+
+======================================
+LOAN APPROVAL PREDICTION
+======================================
+Applicant 1 : Loan Not Approved (No)
+Applicant 2 : Loan Approved (Yes)
+Applicant 3 : Loan Not Approved (No)
+Applicant 4 : Loan Approved (Yes)
+Applicant 5 : Loan Not Approved (No)
+Applicant 6 : Loan Approved (Yes)
+Applicant 7 : Loan Not Approved (No)
+Applicant 8 : Loan Approved (Yes)
+Applicant 9 : Loan Approved (Yes)
+Applicant 10 : Loan Not Approved (No)
+Applicant 11 : Loan Approved (Yes)
+Applicant 12 : Loan Not Approved (No)
+Applicant 13 : Loan Approved (Yes)
+Applicant 14 : Loan Not Approved (No)
+Applicant 15 : Loan Not Approved (No)
+Applicant 16 : Loan Not Approved (No)
+Applicant 17 : Loan Not Approved (No)
+Applicant 18 : Loan Not Approved (No)
+Applicant 19 : Loan Not Approved (No)
+Applicant 20 : Loan Approved (Yes)
+Applicant 21 : Loan Approved (Yes)
+Applicant 22 : Loan Approved (Yes)
+Applicant 23 : Loan Not Approved (No)
+Applicant 24 : Loan Approved (Yes)
+Applicant 25 : Loan Approved (Yes)
+Applicant 26 : Loan Not Approved (No)
+Applicant 27 : Loan Approved (Yes)
+Applicant 28 : Loan Not Approved (No)
+Applicant 29 : Loan Approved (Yes)
+Applicant 30 : Loan Not Approved (No)
+Applicant 31 : Loan Approved (Yes)
+Applicant 32 : Loan Not Approved (No)
+Applicant 33 : Loan Not Approved (No)
+Applicant 34 : Loan Approved (Yes)
+Applicant 35 : Loan Approved (Yes)
+Applicant 36 : Loan Approved (Yes)
+Applicant 37 : Loan Approved (Yes)
+Applicant 38 : Loan Approved (Yes)
+Applicant 39 : Loan Not Approved (No)
+Applicant 40 : Loan Approved (Yes)
+Applicant 41 : Loan Not Approved (No)
+Applicant 42 : Loan Approved (Yes)
+Applicant 43 : Loan Not Approved (No)
+Applicant 44 : Loan Not Approved (No)
+Applicant 45 : Loan Approved (Yes)
+Applicant 46 : Loan Approved (Yes)
+Applicant 47 : Loan Not Approved (No)
+Applicant 48 : Loan Approved (Yes)
+Applicant 49 : Loan Not Approved (No)
+Applicant 50 : Loan Not Approved (No)
+Applicant 51 : Loan Approved (Yes)
+Applicant 52 : Loan Approved (Yes)
+Applicant 53 : Loan Not Approved (No)
+Applicant 54 : Loan Not Approved (No)
+Applicant 55 : Loan Not Approved (No)
+Applicant 56 : Loan Not Approved (No)
+Applicant 57 : Loan Not Approved (No)
+Applicant 58 : Loan Approved (Yes)
+Applicant 59 : Loan Approved (Yes)
+Applicant 60 : Loan Not Approved (No)
+Applicant 61 : Loan Not Approved (No)
+Applicant 62 : Loan Not Approved (No)
+Applicant 63 : Loan Approved (Yes)
+Applicant 64 : Loan Not Approved (No)
+Applicant 65 : Loan Not Approved (No)
+Applicant 66 : Loan Approved (Yes)
+Applicant 67 : Loan Approved (Yes)
+Applicant 68 : Loan Not Approved (No)
+Applicant 69 : Loan Approved (Yes)
+Applicant 70 : Loan Approved (Yes)
+Applicant 71 : Loan Approved (Yes)
+Applicant 72 : Loan Approved (Yes)
+Applicant 73 : Loan Approved (Yes)
+Applicant 74 : Loan Not Approved (No)
+Applicant 75 : Loan Not Approved (No)
+Applicant 76 : Loan Not Approved (No)
+Applicant 77 : Loan Not Approved (No)
+Applicant 78 : Loan Not Approved (No)
+Applicant 79 : Loan Not Approved (No)
+Applicant 80 : Loan Approved (Yes)
+Applicant 81 : Loan Approved (Yes)
+Applicant 82 : Loan Not Approved (No)
+Applicant 83 : Loan Approved (Yes)
+Applicant 84 : Loan Not Approved (No)
+Applicant 85 : Loan Not Approved (No)
+Applicant 86 : Loan Approved (Yes)
+Applicant 87 : Loan Not Approved (No)
+Applicant 88 : Loan Not Approved (No)
+Applicant 89 : Loan Approved (Yes)
+Applicant 90 : Loan Not Approved (No)
+Applicant 91 : Loan Approved (Yes)
+Applicant 92 : Loan Not Approved (No)
+Applicant 93 : Loan Not Approved (No)
+Applicant 94 : Loan Not Approved (No)
+Applicant 95 : Loan Not Approved (No)
+Applicant 96 : Loan Not Approved (No)
+Applicant 97 : Loan Approved (Yes)
+Applicant 98 : Loan Approved (Yes)
+Applicant 99 : Loan Approved (Yes)
+Applicant 100 : Loan Not Approved (No)
+Applicant 101 : Loan Not Approved (No)
+Applicant 102 : Loan Not Approved (No)
+Applicant 103 : Loan Not Approved (No)
+Applicant 104 : Loan Approved (Yes)
+Applicant 105 : Loan Not Approved (No)
+Applicant 106 : Loan Approved (Yes)
+Applicant 107 : Loan Approved (Yes)
+Applicant 108 : Loan Approved (Yes)
+Applicant 109 : Loan Not Approved (No)
+Applicant 110 : Loan Approved (Yes)
+Applicant 111 : Loan Not Approved (No)
+Applicant 112 : Loan Approved (Yes)
+Applicant 113 : Loan Not Approved (No)
+Applicant 114 : Loan Not Approved (No)
+Applicant 115 : Loan Not Approved (No)
+Applicant 116 : Loan Not Approved (No)
+Applicant 117 : Loan Not Approved (No)
+Applicant 118 : Loan Approved (Yes)
+Applicant 119 : Loan Approved (Yes)
+Applicant 120 : Loan Not Approved (No)
+
+======================================
+CONFUSION MATRIX
+======================================
+[[47 20]
+ [19 34]]
+
+TN = 47
+FP = 20
+FN = 19
+TP = 34
+
+======================================
+CLASSIFICATION METRICS
+======================================
+Accuracy = 0.675
+Accuracy (%) = 67.5
+Error = 0.32499999999999996
+Error (%) = 32.49999999999999
+Recall = 0.6415094339622641
+Specificity = 0.7014925373134329
+F1-Score = 0.6355140186915887
+AUC = 0.6715009856378484
+
+======================================
+5-FOLD CROSS VALIDATION
+======================================
+Fold Accuracies: [0.68333333 0.70833333 0.76666667 0.625      0.60833333]
+Mean CV Accuracy: 0.6783333333333333
+PS C:\Users\Admin\Desktop\MLpracticals\p2> 
