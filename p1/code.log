@@ -1,0 +1,106 @@
+PS C:\Users\Admin\Desktop\MLpracticals\p1> py maize.py
+
+Original Dataset:
+  Domain Code                        Domain  Area Code (M49)   Area  Element Code         Element  ...  Year   Unit      Value  Flag Flag Description  Note
+0         QCL  Crops and livestock products              356  India          5312  Area harvested  ...  1961     ha  4507000.0     A   Official value   NaN
+1         QCL  Crops and livestock products              356  India          5412           Yield  ...  1961  kg/ha      956.7     A   Official value   NaN
+2         QCL  Crops and livestock products              356  India          5510      Production  ...  1961      t  4312000.0     A   Official value   NaN
+3         QCL  Crops and livestock products              356  India          5312  Area harvested  ...  1962     ha  4643000.0     A   Official value   NaN
+4         QCL  Crops and livestock products              356  India          5412           Yield  ...  1962  kg/ha      992.2     A   Official value   NaN
+
+[5 rows x 15 columns]
+
+Columns in Dataset:
+['Domain Code', 'Domain', 'Area Code (M49)', 'Area', 'Element Code', 'Element', 'Item Code (CPC)', 'Item', 'Year Code', 'Year', 'Unit', 'Value', 'Flag', 'Flag Description', 'Note']
+
+Columns in Dataset:
+['Year', 'Area harvested', 'Production', 'Yield']
+
+Dataset Size:
+(64, 4)
+
+First Year: 1961
+Last Year : 2024
+
+============================================
+TRAINING AND TESTING DATA
+============================================
+Training Period: 1961 - 2011
+Testing Period : 2012 - 2024
+Training Observations: 51
+Testing Observations: 13
+
+============================================
+LINEAR REGRESSION
+============================================
+Hypothesis:
+h(w,b) = w*x + b
+
+w = 266656.77125791856
+b = -520364839.89469683
+
+Equation:
+h(w,b) = (266656.7713)x + (-520364839.8947)
+
+============================================
+POLYNOMIAL REGRESSION
+============================================
+Hypothesis:
+h(w,b) = w2*x^2 + w1*x + b
+
+w1 = 0.01692417570595636
+w2 = 67.22356360264077
+b  = -255942001.56061205
+
+Equation:
+h(w,b) = (67.2235636)x^2 + (0.01692418)x + (-255942001.5606)
+
+============================================
+MULTIVARIATE LINEAR REGRESSION
+============================================
+Hypothesis:
+h(w,b) = w1*x1 + w2*x2 + w3*x3 + b
+
+w1 = -55168.767472957064
+w2 = 1.9338717114788446
+w3 = 7688.565264720346
+b  = 95831949.29162304
+
+Equation:
+h(w,b) = (-55168.7675)x1 + (1.933872)x2 + (7688.5653)x3 + (95831949.2916)
+
+Linear Regression
+--------------------------------
+MAE  : 11143943.55
+RMSE : 12054090.91
+R2   : -3.7048
+
+Polynomial Regression
+--------------------------------
+MAE  : 11077362.91
+RMSE : 11986105.79
+R2   : -3.6519
+
+Multivariate Regression
+--------------------------------
+MAE  : 2881489.15
+RMSE : 3385066.5
+R2   : 0.629
+
+============================================
+MODEL COMPARISON
+============================================
+                  Model          MAE         RMSE        R2
+      Linear Regression 1.114394e+07 1.205409e+07 -3.704815
+  Polynomial Regression 1.107736e+07 1.198611e+07 -3.651894
+Multivariate Regression 2.881489e+06 3.385066e+06  0.628971
+
+============================================
+      FUTURE MAIZE PRODUCTION PREDICTION
+              2027 - 2030
+============================================
+ Year Linear Prediction Polynomial Prediction Multivariate Prediction
+ 2027        20,148,435            20,261,438              33,206,920
+ 2028        20,415,092            20,534,030              33,151,751
+ 2029        20,681,749            20,806,756              33,096,582
+ 2030        20,948,406            21,079,616              33,041,413
